@@ -1,0 +1,30 @@
+@import 'tailwindcss';
+
+:root {
+  --background: #0f172a;
+  --foreground: #cbd5e1;
+  --card: #1e293b;
+  --card-foreground: #f8fafc;
+  --border: #334155;
+  --primary: #38bdf8;
+  --muted: #334155;
+
+  --bg: var(--card);
+  --text: var(--foreground);
+  --text-h: var(--card-foreground);
+  --accent: var(--primary);
+  --accent-bg: color-mix(in srgb, var(--primary) 15%, transparent);
+  --accent-border: color-mix(in srgb, var(--primary) 45%, transparent);
+
+  font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+  color: var(--foreground);
+  background: var(--background);
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  min-height: 100svh;
+}
