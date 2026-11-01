@@ -23,6 +23,10 @@ Interactive 3D product viewer built with React Three Fiber, drei, and Zustand. T
 
 Interactive 3D product viewer — React Three Fiber, drei, Zustand.
 
+## Responsive layout
+
+Full adaptive layout for phone (~375px) and tablet (~768px): readable typography and spacing, no page-level horizontal scroll, and touch-friendly controls. The desktop visual language is preserved.
+
 ## Scripts
 
 ```bash
