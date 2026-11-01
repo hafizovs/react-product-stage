@@ -30,8 +30,13 @@ function StageScene() {
 
 export function ProductCanvas() {
   return (
-    <div className="h-[min(520px,60vh)] w-full overflow-hidden rounded-xl border border-[var(--border)] bg-slate-950">
-      <Canvas camera={{ position: [2.4, 1.6, 2.8], fov: 45 }} dpr={[1, 1.75]} shadows>
+    <div className="h-[min(360px,48svh)] w-full min-w-0 max-w-full overflow-hidden rounded-xl border border-[var(--border)] bg-slate-950 sm:h-[min(440px,52svh)] md:h-[min(480px,56svh)] lg:h-[min(520px,60vh)]">
+      <Canvas
+        className="!block h-full w-full max-w-full touch-none"
+        camera={{ position: [2.4, 1.6, 2.8], fov: 45 }}
+        dpr={[1, 1.75]}
+        shadows
+      >
         <StageScene />
       </Canvas>
     </div>
