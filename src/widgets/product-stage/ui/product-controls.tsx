@@ -4,7 +4,7 @@ import { EnvironmentToggle } from '@/features/toggle-environment'
 
 export function ProductControls() {
   return (
-    <aside className="flex flex-col gap-5 rounded-xl border border-[var(--border)] bg-[var(--bg)] p-4">
+    <aside className="flex min-w-0 flex-col gap-5 rounded-xl border border-[var(--border)] bg-[var(--bg)] p-4 sm:p-5 md:sticky md:top-6">
       <div>
         <h2 className="text-sm font-semibold text-[var(--text-h)]">Shape</h2>
         <p className="mb-2 text-xs text-[var(--text)]">Switch between box and sphere mesh.</p>

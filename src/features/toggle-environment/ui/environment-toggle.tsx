@@ -6,7 +6,7 @@ export function EnvironmentToggle() {
   const toggleEnvironment = useProductStageStore((s) => s.toggleEnvironment)
 
   return (
-    <Button onClick={toggleEnvironment} variant="outline">
+    <Button className="w-full" onClick={toggleEnvironment} variant="outline">
       Environment: {studioEnvironment ? 'Studio' : 'Neutral'}
     </Button>
   )

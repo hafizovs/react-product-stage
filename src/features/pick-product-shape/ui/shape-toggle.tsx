@@ -9,11 +9,12 @@ export function ShapeToggle() {
   const setShape = useProductStageStore((s) => s.setShape)
 
   return (
-    <div className="flex gap-2">
+    <div className="grid grid-cols-2 gap-2">
       {shapes.map((item) => (
         <Button
           key={item}
           aria-pressed={shape === item}
+          className="w-full capitalize"
           onClick={() => setShape(item)}
           variant={shape === item ? 'default' : 'outline'}
         >
